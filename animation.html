@@ -1,0 +1,32 @@
+<style>
+    body {
+        background:black;
+    }
+    #animate1{
+        background:  url(./img/bg-header.jpg) no-repeat;
+    }
+    #animate2{
+        background: url(./img/bg-get2.jpg) no-repeat;
+    }
+</style>
+    <div class="animate" id="animate1"></div>
+    <div class="animate" id="animate2"></div>
+    <script src="js/foundation.js"></script>
+    <script src="js/CSSRulePlugin.min.js"></script>
+    <script src="js/canva.min.js"></script>
+    <script>
+        var animation = lottie.loadAnimation({
+            container: document.getElementById('animate1'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'img/data.json'
+        })
+        var animation2 = lottie.loadAnimation({
+            container: document.getElementById('animate2'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'img/data2.json'
+        })
+    </script>
